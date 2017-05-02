@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+}
+
+
+/* HEADER CSS */
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 100px;
+    background-color: rgba(0, 163, 136, 1);
+    text-align: center;
+}
+
+/* NAV CSS */
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    top: 0;
+}
+
+nav img:first-child:link {
+    color: #fff;
+    text-decoration: none;
+}
+    
+nav img:first-child:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav img:first-child{
+    width: 250px;
+    height: 170px;
+    margin-top: 20px;
+}
+
+#navigatie-opener{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right: 60px;
+    top: 80px
+}
+
+#navagatie-opener:link{
+    text-decoration:none;
+}
+
+#navigatie-opener:visited{
+    text-decoration: none;
+}
+
+
+/* MOTTO CSS */
+
+#motto {
+    font-size: 65px;
+    line-height: 1.3;
+    color: white;
+    max-width: 970px;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 50px auto;
+}
+
+/* OVER ONS KNOP CSS */
+
+#over-ons-knop:link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    line-height: 1.3;
+    font-size: 20pt;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-family: 'Julius Sans One', sans-serif;
+    border: 2px solid white;
+    padding: 10px 60px;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+#over-ons-knop:visited{
+    color: white;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 20pt;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    font-family: 'Julius Sans One', sans-serif;
+    
+}
+
+#over-ons-knop:hover{
+    background-color: rgba(54, 180, 147, 1);
+}
+
+/* PORTFOLIO CSS */
+
+#portfolio {
+    position: relative;
+    width: 100%;
+    background-color:white;
+    top: 0;
+}
+
+#portfolio-titel{
+    position: relative;
+    margin: 0 auto;
+    color: rgba(0, 163, 136, 1);
+    padding: 50px 0px;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 700;
+    font-family: 'Julius Sans One', sans-serif;
+    max-width: 970px;
+    letter-spacing: 0.2em;
+}
+
+.project-card{
+    width: 50%;
+    height: 450px;
+    border: 2px solid white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-card.left {
+    float: left;
+    background-color: rgba(0, 163, 136, 1);
+    left: 0;
+}
+
+.project-card.right{
+    float: right;
+    background-color: rgba(54, 180, 147, 1);
+    right: 0;
+}
+
+.project-card a:link{
+    color: white;
+    text-decoration: none;
+    font-family:  'Julius Sans One', sans-serif;;
+    font-weight: 700;
+    font-size: 28pt;
+    line-height: 1;
+    letter-spacing: 0.2em;
+}
+
+.project-card a:visited{
+    color: white;
+    text-decoration: none;
+    font-family:  'Julius Sans One', sans-serif;
+    font-weight: 700;
+    font-size: 28pt;
+    letter-spacing: 0.2em;
+}
+
+.project-card img{
+    width: 121px;
+    height: 6px;
+}
+
+.project-card p{
+    margin-bottom: -7.5px;
+}
+
+.project-card h5{
+    font-size: 11pt;
+    font-family:  'Julius Sans One', sans-serif;
+    margin-bottom: 15px;
+    color: white;
+
+
+}
+
+#project1:hover{
+
+    background-color: pink;
+}
+
+#project2:hover{
+    background-color: khaki;
+    
+}
+/*
+#project3{
+
+}
+
+#project4{
+
+}
+
+#project5{
+
+}
+
+#project6{
+
+}
+
+#project7{
+
+}
+
+#project8{
+
+}
+
+#project9{
+
+}
+
+#project10{
+
+} */
