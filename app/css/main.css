@@ -2,6 +2,79 @@ body {
     margin: 0;
 }
 
+body.geopend {
+    overflow: hidden;
+}
+
+/* SIDENAV CSS */
+
+#sidenav{ 
+    position: absolute;
+    width: 330px;
+    height: 100vh;
+    background-color: white;
+    right: 0;
+    overflow: hidden;
+}
+
+#sidenav.geopend {
+    overflow-y: scroll;
+}
+
+#navigatie-dicht {
+    position: absolute;
+    cursor: pointer;
+    font-size: 30pt;
+    color: rgba(0, 163, 136, 1);
+    right: 60px;
+    top: 52px;
+}
+#navigatie-inhoud{
+    background-color: white;
+    max-width: 330px;
+    height: auto;
+    margin: 0px 0 30px;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+
+#navigatie-inhoud h1{
+    font-size: 24pt;
+    margin: 0px 30px 40px 30px;
+    color: rgba(0, 163, 136, 1);
+    font-weight: 700;
+}
+
+#navigatie-inhoud hr{
+    margin: 0px 60px 20px 30px;
+    border: 1px solid rgba(0, 163, 136, 1)
+}
+
+#navigatie-inhoud a:link{
+    text-decoration: none;
+    display: block;
+    color: rgba(54, 180, 147, 1);
+    font-size: 12pt;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#navigatie-inhoud a:visited{
+    text-decoration: none;
+    color: rgba(54, 180, 147, 1);
+    font-size: 12pt;
+}
+
+#navigatie-inhoud p{
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 100px;
+    font-size: 24pt;
+    color: rgba(54, 180, 147, 1);
+    margin: 0 36px 0 30px;
+    text-align: justify;
+}
 
 /* HEADER CSS */
 
@@ -13,6 +86,18 @@ header {
     padding-bottom: 100px;
     background-color: rgba(0, 163, 136, 1);
     text-align: center;
+    transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -moz-transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -o-transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -webkit-transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9); 
+    z-index: 100;
+    margin: 0;
+}
+
+header.geopend {
+    left: -330px;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 /* NAV CSS */
@@ -67,6 +152,8 @@ nav img:first-child{
     font-family: 'Julius Sans One', sans-serif;
     margin: 50px auto;
 }
+
+
 
 /* OVER ONS KNOP CSS */
 
