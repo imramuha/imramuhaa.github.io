@@ -6,6 +6,13 @@ body.geopend {
     overflow: hidden;
 }
 
+::selection {
+    background-color: pink;
+    color: black;
+    text-shadow: none;
+}
+
+
 /* SIDENAV CSS */
 
 #sidenav{ 
@@ -14,7 +21,13 @@ body.geopend {
     height: 100vh;
     background-color: white;
     right: 0;
+    margin: 0 0 30px;
     overflow: hidden;
+}
+@media all and (max-width: 750px){
+    #sidenav{
+        width: 300px;
+    }
 }
 
 #sidenav.geopend {
@@ -29,24 +42,40 @@ body.geopend {
     right: 60px;
     top: 52px;
 }
+@media all and (max-width: 750px){
+    #navigatie-dicht{
+       font-size: 15pt;
+       right: 30px;
+       top: 15px
+    }
+}
+
 #navigatie-inhoud{
     background-color: white;
     max-width: 330px;
     height: auto;
     margin: 0px 0 30px;
     overflow-x: hidden;
-    padding-top: 100px;
+    
 }
 
+
 #navigatie-inhoud h1{
-    font-size: 24pt;
-    margin: 0px 30px 40px 30px;
+    font-size: 20pt;
+    margin: 100px 30px 40px 30px;
     color: rgba(0, 163, 136, 1);
     font-weight: 700;
 }
 
+@media all and (max-width: 750px){
+    #navigatie-inhoud h1{
+       font-size: 15pt;
+       margin: 41px 0 30px 30px;
+    }
+}
+
 #navigatie-inhoud hr{
-    margin: 0px 60px 20px 30px;
+    margin: 30px 80px 30px 30px;
     border: 1px solid rgba(0, 163, 136, 1)
 }
 
@@ -60,23 +89,62 @@ body.geopend {
     line-height: 1.5;
 }
 
+@media all and (max-width: 750px){
+    #navigatie-inhoud a:link{
+       font-size: 10pt;
+       margin-bottom: 15px;
+    }
+}
+
 #navigatie-inhoud a:visited{
     text-decoration: none;
     color: rgba(54, 180, 147, 1);
     font-size: 12pt;
 }
 
+#navigatie-inhoud a:hover{
+    color: rgba(555, 163, 136, 1);
+}
+
 #navigatie-inhoud p{
     cursor: pointer;
-    display: inline-block;
+    float: left;
     padding-bottom: 100px;
     font-size: 24pt;
     color: rgba(54, 180, 147, 1);
-    margin: 0 36px 0 30px;
-    text-align: justify;
+    margin: 0 64px 0 0px;
+    
 }
 
-/* HEADER CSS */
+@media all and (max-width: 750px){
+    #navigatie-inhoud p{
+        font-size: 25px;
+    }
+}
+
+
+#navigatie-inhoud p:link{
+    text-decoration: none;
+    display: block;
+    color: rgba(54, 180, 147, 1);
+    font-size: 12pt;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#navigatie-inhoud p:visited{
+    text-decoration: none;
+    color: rgba(54, 180, 147, 1);
+    font-size: 12pt;
+}
+
+#navigatie-inhoud p:hover{
+    color: rgba(555, 163, 136, 1);
+}
+
+
+/* HEADER CSS index*/
 
 header {
     position: relative;
@@ -100,6 +168,15 @@ header.geopend {
     overflow: hidden;
 }
 
+/* HEADER CSS overige */
+#header-overige {
+    position: relative;
+    width: 100%;
+    text-align: none;
+ 
+}
+
+
 /* NAV CSS */
 
 nav {
@@ -120,17 +197,41 @@ nav img:first-child:visited {
 }
 
 nav img:first-child{
-    width: 250px;
+    width: 270px;
     height: 170px;
     margin-top: 20px;
 }
+@media all and (max-width: 750px){
+    nav img:first-child{
+        width: 220px;
+        height: 140px;
+        margin: 20px 30px 0 30px;
+    }
+}
+@media all and (max-width: 500px){
+    nav img:first-child{
+        width: 170px;
+        height: 110px;
+        margin: 20px 30px 0 30px;
+    }
+}
+
 
 #navigatie-opener{
     position: absolute;
-    width: 40px;
-    height: 30px;
+    color: white;
+    font-size: 30pt;
     right: 60px;
-    top: 80px
+    top: 51px;
+    cursor: pointer;
+}
+
+@media all and (max-width: 500px){
+    #navigatie-opener{
+       font-size: 15pt;
+       right: 30px;
+       top: 21px
+    }
 }
 
 #navagatie-opener:link{
@@ -141,19 +242,94 @@ nav img:first-child{
     text-decoration: none;
 }
 
+/* NAV CSS overige */
+#logo-overige{
+    width: 270px;
+    height: 170px;
+    margin: 35px 50px;
+    float: left;
+}
 
-/* MOTTO CSS */
+@media all and (max-width: 750px){
+    #logo-overige{
+        text-align: center;
+        width: 220px;
+        height: 140px;
+        margin: 20px 30px 0 170px;
+    }
+}
+@media all and (max-width: 500px){
+    #logo-overige{
+        text-align: center;
+        width: 170px;
+        height: 110px;
+        margin: 20px 30px 10px 70px;
+    }
+}
+
+/* MOTTO CSS index*/
 
 #motto {
-    font-size: 65px;
+    font-size: 50pt;
     line-height: 1.3;
     color: white;
     max-width: 970px;
     font-family: 'Julius Sans One', sans-serif;
-    margin: 50px auto;
+    margin: 50px 50px 30px 50px;
+    text-align: center;
+    display: inline-block;
 }
 
+@media all and (max-width: 800px) {
+    #motto {
+        font-size: 40pt;
+        margin: 50px 30px 30px 30px;
+    }
+}
+@media all and (max-width: 600px) {
+    #motto {
+        font-size: 30pt;
+        margin: 30px 30px 30px 30px;
+    }
+}
+@media all and (max-width: 600px) {
+    #motto {
+        font-size: 18pt;
+        margin: 10px 30px 30px 30px;
+    }
+}
 
+/* MOTTO CSS overige */
+#motto-overige {
+    font-size: 30pt;
+    line-height: 1.3;
+    color: white;
+    max-width: 970px;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 0px auto 50px;
+    text-align: center;
+    display: block;
+    padding: 75px 20px;
+}
+
+@media all and (max-width: 800px) {
+    #motto-overige {
+        font-size: 25pt;
+        margin: 0px 30px 30px 30px;
+    }
+}
+@media all and (max-width: 600px) {
+    #motto-overige {
+        font-size: 20pt;
+        margin: 0px 30px 30px 30px;
+    }
+}
+@media all and (max-width: 600px) {
+    #motto-overige {
+        font-size: 15pt;
+        margin: 0px 30px 30px 30px;
+    }
+}
 
 /* OVER ONS KNOP CSS */
 
@@ -167,12 +343,23 @@ nav img:first-child{
     letter-spacing: 0.2em;
     font-family: 'Julius Sans One', sans-serif;
     border: 2px solid white;
-    padding: 10px 60px;
+    padding: 10px 40px;
     background: transparent;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+    display: inline-block;
+    margin: 0 30px 0 30px;
+    max-width: 400px;
+}
+
+@media all and (max-width: 500px) {
+    #over-ons-knop:link {
+        font-size: 10pt;
+        margin: 10px 30px -20px 30px;
+        display: inline-block;
+    }
 }
 
 #over-ons-knop:visited{
@@ -211,6 +398,17 @@ nav img:first-child{
     max-width: 970px;
     letter-spacing: 0.2em;
 }
+#portfolio.geopend {
+    left: -330px;
+    max-height: 300vh;
+    overflow: hidden;
+}
+@media all and (max-width: 500px) {
+    #portfolio-titel {
+        font-size: 10pt;
+        margin: -20px 30px -20px 30px;
+    }
+}
 
 .project-card{
     width: 50%;
@@ -222,10 +420,38 @@ nav img:first-child{
     align-items: center;
     flex-direction: column;
 }
+@media all and (max-width: 650px){
+    .project-card{
+        display: block;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .project-card.right{
+        float: none;
+    }
+    .project-card.left{
+        float:left;
+        
+    }
+}
+
+@media all and (max-width: 400px){
+    .project-card{
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 
 .project-card.left {
     float: left;
-    background-color: rgba(0, 163, 136, 1);
+    background-color: rgba(54, 180, 147, 1);
     left: 0;
 }
 
@@ -238,13 +464,19 @@ nav img:first-child{
 .project-card a:link{
     color: white;
     text-decoration: none;
-    font-family:  'Julius Sans One', sans-serif;;
+    font-family:  'Julius Sans One', sans-serif;
     font-weight: 700;
     font-size: 28pt;
     line-height: 1;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.07em;
 }
 
+@media all and (max-width: 650px){
+.project-card a:link  {
+        font-size: 10pt;
+        
+    }
+}
 .project-card a:visited{
     color: white;
     text-decoration: none;
@@ -259,6 +491,12 @@ nav img:first-child{
     height: 6px;
 }
 
+@media all and (max-width: 650px){
+.project-card img  {
+        width: 120px;        
+    }
+}
+
 .project-card p{
     margin-bottom: -7.5px;
 }
@@ -268,48 +506,290 @@ nav img:first-child{
     font-family:  'Julius Sans One', sans-serif;
     margin-bottom: 15px;
     color: white;
-
-
+}
+@media all and (max-width: 650px){
+.project-card h5  {
+        font-size: 8pt;
+        
+    }
 }
 
 #project1:hover{
-
-    background-color: pink;
+    background-image: url("../assets/portfolio1.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
 }
 
 #project2:hover{
-    background-color: khaki;
-    
-}
-/*
-#project3{
-
+    background-image: url("../assets/portfolio2.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
 }
 
-#project4{
+#project3:hover{
+    background-image: url("../assets/portfolio3.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+#project4:hover{
+     background-image: url("../assets/portfolio4.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+#project5:hover{
+    background-image: url("../assets/portfolio5.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+#project6:hover{
+    background-image: url("../assets/portfolio6.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+#project7:hover{
+   background-image: url("../assets/portfolio7.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+#project8:hover{
+    background-image: url("../assets/portfolio8.jpg");
+    background-size: 100% 100%;    
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+#project9:hover{
+    background-image: url("../assets/portfolio9.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+#project10:hover{
+    background-image: url("../assets/portfolio10.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+#project11:hover{
+    background-image: url("../assets/portfolio11.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+#project12:hover{
+    background-image: url("../assets/portfolio12.jpg");
+    background-size: 100% 100%;     
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}  
+
+/* FOOTER CSS */
+#footer {
+    width: auto;
+    height: auto;
+}
+
+#footer p.copyright {
+    font-size: 20pt;
+    color: rgba(54, 180, 147, 1);
+    float: left;
+    padding: 20px 0 20px 0;
+    margin: 0 36px 0 30px;
+}
+@media all and (max-width: 500px){
+    #footer p.copyright{
+        font-size: 10pt;
+        margin: 0 0 50px 68px;
+    }
+}
+
+#footer p.social-media{
+    cursor: pointer;
+    padding: 20px 0 20px 0;
+    font-size: 24pt;
+    color: rgba(54, 180, 147, 1);
+    margin: 0 36px 0 30px;
+    float: right;
+}
+@media all and (max-width: 500px){
+    #footer p.social-media{
+        font-size: 15pt;   
+        display: inline-flex;
+        float: none;
+        margin: 0 40px;
+    }
+}
+
+#footer p.social-media:link{
+    text-decoration: none;
+    display: block;
+    color: rgba(54, 180, 147, 1);
+    font-size: 12pt;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#footer p.social-media:visited{
+    text-decoration: none;
+    color: rgba(54, 180, 147, 1);
+    font-size: 12pt;
+}
+
+#footer p.social-media:hover{
+    color: rgba(555, 163, 136, 1);
+}
+
+/* CONTACT FORM CSS */
+.contact-form{
+    border: 2px solid grey;
+    position: relative;
+}
+
+.contact-form.left{
+    width: 50%;
+    height: 530px;
+    background-color: rgba(54, 180, 147, 1);
+    padding: 23px 60px 23px 100px;
+    border: 2px solid white;
+    float: left;
+}
+
+.contact-form.right{
+    width: 50%;
+    height: 530px;
+    background-color: rgba(54, 180, 147, 1);
+    float: right;
+    border: 2px solid white;
+    padding: 23px 100px 23px 60px;
+}
+
+#map {                                              /*Google map*/
+        height: 330px;
+        width: 100%;
+        border: 5px solid white;
+       }
+
+#contact-gegevens{                                  /*Contact gegevens*/
+        width: 100%;
+        height: 130px;
+        margin-top: 23px;
+        font-size: 20pt;
+        color: rgba(255, 255, 255, 1);
+        text-align: right;
+}
+
+/* FORMULIER */
+#contact-formulier{                                 /*Formulier*/
+        width: 100%;
+        height: 483px;
+        padding: 0.1px;
+        color: white;
 
 }
 
-#project5{
+input[type=text], select[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 20px;                     
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color:rgba(255, 255, 157, 1);
+    color: rgba(0, 163, 136, 1);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:rgba(190, 235, 159, 1);
+}
+
+#contact-formulier h3, label{
+    font-size: 20pt;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 0px 0px 20px 0px;
+}
+
+#contact-formulier label{
+    font-size: 15px;
+}
+
+
+
+
+
+/************************************************/
+/* CSS ALGEMENE VOORWAARDEN */
+.algemene-voorwaarden{
+    width: 100%;
+    height: auto;
+    position: relative;
+   background-color: rgba(54, 180, 147, 1);
+    border: 2px solid white;;
+    padding: 30px 100px;
+}
+
+p{
+    color: rgba(255 , 255, 255, 1);
+    line-height: 2.5ex;
+    font-size: 12pt;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px 0px 30px;
+}
+
+h3{
+    margin: 10px 0px 10px;
+    color: rgba(255 , 255, 255, 1);
+    font-size: 18pt; 
+    font-family: 'Julius Sans Pro', sans-serif;
 
 }
 
-#project6{
 
+/* CSS PRIVACY BELEID*/
+.privacy-beleid{
+    width: 100%;
+    height: auto;
+    padding: 30px 100px;
+    background-color: rgba(54, 180, 147, 1);
+    border: 2px solid white;
+    position: relative;
 }
 
-#project7{
-
+.roman {
+    list-style-type: lower-roman;
+ 
+    margin: 10px 0px 10px;
+    color: rgba(255 , 255, 255, 1);
+    font-size: 18pt; 
+    font-family: 'Julius Sans Pro', sans-serif;
 }
-
-#project8{
-
+.square {
+    list-style-type: square;
+    margin-left: -2em;
+    color: rgba(255 , 255, 255, 1);
+    line-height: 3ex;
+    font-size: 12pt;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px 0px 30px;
 }
-
-#project9{
-
-}
-
-#project10{
-
-} */
