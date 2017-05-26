@@ -755,16 +755,38 @@ input[type=submit]:hover {
    background-color: rgba(54, 180, 147, 1);
     border: 2px solid white;;
     padding: 30px 100px;
-
+}
+@media all and (max-width: 750px){
+    .algemene-voorwaarden{
+        padding: 30px 50px;
+    }
+}
+@media all and (max-width: 400px){
+    .algemene-voorwaarden{
+        padding: 20px 20px 0 10px;
+    }
 }
 
 .roman {
     list-style-type: lower-roman;
     margin: 10px 0px 10px;
-    color: rgba(255 , 255, 255, 1);
     font-size: 18pt; 
+    color: rgba(255 , 255, 255, 1);
     font-family: 'Julius Sans One', sans-serif;
 }
+@media all and (max-width: 750px){
+    .roman{
+       font-size: 14pt;
+       padding: 20px 25px;
+    }
+}
+@media all and (max-width: 400px){
+    .roman{
+        font-size: 12pt;
+        list-style-type: none;
+    }
+}
+
 .square {
     list-style-type: square;
     margin-left: -2em;
@@ -773,6 +795,22 @@ input[type=submit]:hover {
     font-size: 12pt;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 10px 0px 30px;
+    text-align: justify;
+}
+@media all and (max-width: 750px){
+    .square{
+        margin-left: -1em;
+        font-size: 11pt; 
+    }
+}
+@media all and (max-width: 400px){
+    .square{
+        margin: 8px 0px 8px;
+        font-size: 9pt; 
+        margin-left: -3.2em;
+        list-style-type: none;
+        line-height: 2.5ex;
+    }
 }
 
 
@@ -786,25 +824,50 @@ input[type=submit]:hover {
     border: 2px solid white;
     position: relative;
 }
+@media all and (max-width: 750px){
+    .privacy-beleid{
+        padding: 30px 50px;
+    }
+}
+@media all and (max-width: 400px){
+    .privacy-beleid{
+        padding: 20px 25px;
+    }
+}
 
 .privacy-beleid h3{
-    list-style-type: lower-roman;
     margin: 10px 0px 10px;
     color: rgba(255 , 255, 255, 1);
     font-size: 18pt; 
     font-family: 'Julius Sans One', sans-serif;
 }
-
+@media all and (max-width: 750px){
+    .privacy-beleid h3{
+        font-size: 14pt; 
+    }
+}
+@media all and (max-width: 400px){
+    .privacy-beleid h3{
+       font-size: 12pt; 
+    }
+}
 .privacy-beleid p{
-    list-style-type: square;
-    margin-left: -2em;
     color: rgba(255 , 255, 255, 1);
     line-height: 3ex;
     font-size: 12pt;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 10px 0px 30px;
 }
-
+@media all and (max-width: 750px){
+    .privacy-beleid p{
+        font-size: 11pt; 
+    }
+}
+@media all and (max-width: 400px){
+    .privacy-beleid p{
+       font-size: 9pt; 
+    }
+}
 
 
 
@@ -812,26 +875,49 @@ input[type=submit]:hover {
 
 .over-ons{
     width: 100%;
-    height: 1000px;
+    height: auto;
+    position: relative;
     padding: 0px;
     background-color: rgba(54, 180, 147, 1);
 }
 
 #tekstoverons p {
-    font-size: 20pt;
+    font-size: 18pt;
     text-align: center;
-    padding: 30px 100px 30px 100px;
+    padding: 30px 100px;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 4ex;
     overflow: hidden;
 }
-
-#tekstoverons hr{
-    margin: 30px 80px 30px 30px;
-    border: 5px solid rgba(255,255,255,1);
+@media all and (max-width: 750px){
+    #tekstoverons p{
+        font-size: 11pt;
+        padding: 30px 65px;
+        line-height: 3ex;
+    }
+}
+@media all and (max-width: 400px){
+    #tekstoverons p{
+     font-size: 9pt;
+     padding: 20px 40px;
+    }
 }
 
+#tekstoverons hr{
+    margin: 30px 180px 30px 180px;
+    border: 5px solid rgba(255,255,255,1);
+}
+@media all and (max-width: 750px){
+    #tekstoverons hr{
+        margin: 20px 130px 20px 130px;
+    }
+}
+@media all and (max-width: 400px){
+    #tekstoverons hr{
+      margin: 15px 80px 15px 80px;
+    }
+}
 #tekstoverons h3{
     color: rgba(255, 255, 255, 1);
     padding: 70px 0px 40px;
@@ -841,6 +927,16 @@ input[type=submit]:hover {
     font-family: 'Julius Sans One', sans-serif;
     letter-spacing: 0.2em;
 }   
+@media all and (max-width: 750px){
+    #tekstoverons h3{
+        font-size: 15pt;
+    }
+}
+@media all and (max-width: 400px){
+    #tekstoverons h3{
+      font-size: 10pt;
+    }
+}
 
 
 #ourteam{
@@ -915,3 +1011,114 @@ input[type=submit]:hover {
     margin: 0 auto;
 }
 
+
+
+/* CSS DETAILSPAGINA **********/
+
+.detail-pagina{
+    border: 2px solid grey;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.detail-pagina.left{
+    width: 60%;
+    height: 530px;
+    background-color: rgba(54, 180, 147, 1);
+    padding: 23px 60px 23px 100px;
+    border: 2px solid white;
+    float: left;
+}
+@media all and (max-width: 750px){
+    .detail-pagina.left{
+        width: 100%;
+        height: 400px;
+        padding: 20px 50px 10px 50px;
+    }
+}
+
+@media all and (max-width: 400px){
+    .detail-pagina.left{
+        width: 100%;
+        height: 250px;
+        padding: 15px 40px 15px 40px;
+    }
+}
+
+
+.detail-pagina.right{
+    width: 40%;
+    height: 530px;
+    background-color: rgba(54, 180, 147, 1);
+    float: right;
+    border: 2px solid white;
+    padding: 0 100px 23px 60px;
+}
+@media all and (max-width: 1125px){
+    .detail-pagina.right{
+        padding: 0 50px 20px 50px;
+    }
+}
+@media all and (max-width: 750px){
+    .detail-pagina.right{
+        width: 100%;
+        height: 400px;
+        padding: 0 50px 20px 50px;
+    }
+}
+@media all and (max-width: 400px){
+    .detail-pagina.right{
+        width: 100%;
+        height: 250px;
+        padding: 0 40px 15px 40px;
+    }
+}
+
+
+#detailproject p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
+    color: white;
+}
+@media all and (max-width: 1125px){
+    #detailproject p{
+        font-size: 12pt;
+    }
+}
+@media all and (max-width: 750px){
+    #detailproject p{
+        font-size: 11pt;
+    }
+}
+@media all and (max-width: 400px){
+    #detailproject p{
+        font-size: 7pt;
+    }
+}
+
+#detailproject h3{
+    font-family: 'Julius San One', sans-serif;
+    font-size: 20pt;
+    color: white;
+}
+@media all and (max-width: 750px){
+    #detailproject h3{
+        font-size: 12pt;
+    }
+}
+@media all and (max-width: 400px){
+    #detailproject h3{
+        font-size: 15pt;
+    }
+}
+
+#project {
+    background-color: rgba(0, 163, 136, 1);
+    height: 100%;
+    background-image: url("../assets/portfolio1.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: 4px solid white;
+}
