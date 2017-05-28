@@ -330,9 +330,6 @@ nav img:first-child{
     padding: 10px 40px;
     background: transparent;
     transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
     display: inline-block;
     margin: 0 30px 0 30px;
     max-width: 400px;
@@ -356,7 +353,7 @@ nav img:first-child{
 }
 
 #over-ons-knop:hover{
-    background-color: rgba(54, 180, 147, 1);
+    background-color:rgba(255, 255, 157, 1);
 }
 
 /* PORTFOLIO CSS */
@@ -755,6 +752,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
+    transition: all 0.5s ease-in-out;
     background-color:rgba(255, 255, 157, 1);
     color: rgba(54, 180, 147, 1);
 }
@@ -922,7 +920,7 @@ input[type=submit]:hover {
     background-color: rgba(54, 180, 147, 1);
 }
 
-#tekstoverons p {
+#tekstoverons p{
     font-size: 18pt;
     text-align: center;
     padding: 30px 100px;
