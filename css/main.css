@@ -12,9 +12,7 @@ body.geopend {
     text-shadow: none;
 }
 
-
 /* SIDENAV CSS */
-
 #sidenav{ 
     position: absolute;
     width: 330px;
@@ -55,10 +53,8 @@ body.geopend {
     max-width: 330px;
     height: auto;
     margin: 0px 0 30px;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;    
 }
-
 
 #navigatie-inhoud h1{
     font-size: 20pt;
@@ -66,7 +62,6 @@ body.geopend {
     color: rgba(0, 163, 136, 1);
     font-weight: 700;
 }
-
 @media all and (max-width: 750px){
     #navigatie-inhoud h1{
        font-size: 15pt;
@@ -88,7 +83,6 @@ body.geopend {
     margin-bottom: 20px;
     line-height: 1.5;
 }
-
 @media all and (max-width: 750px){
     #navigatie-inhoud a:link{
        font-size: 10pt;
@@ -112,16 +106,13 @@ body.geopend {
     padding-bottom: 100px;
     font-size: 24pt;
     color: rgba(54, 180, 147, 1);
-    margin: 0 64px 0 0px;
-    
+    margin: 0 64px 0 0px;    
 }
-
 @media all and (max-width: 750px){
     #navigatie-inhoud p{
         font-size: 25px;
     }
 }
-
 
 #navigatie-inhoud p:link{
     text-decoration: none;
@@ -143,9 +134,7 @@ body.geopend {
     color: rgba(255, 97, 56, 1);
 }
 
-
 /* HEADER CSS index*/
-
 header {
     position: relative;
     top: 0;
@@ -178,7 +167,6 @@ header.geopend {
 
 
 /* NAV CSS */
-
 nav {
     position: relative;
     width: 100%;
@@ -216,7 +204,6 @@ nav img:first-child{
     }
 }
 
-
 #navigatie-opener{
     position: absolute;
     color: white;
@@ -225,7 +212,6 @@ nav img:first-child{
     top: 51px;
     cursor: pointer;
 }
-
 @media all and (max-width: 700px){
     #navigatie-opener{
        font-size: 15pt;
@@ -249,7 +235,6 @@ nav img:first-child{
     margin: 35px 30px;
     float: left;
 }
-
 @media all and (max-width: 750px){
     #logo-overige{
         width: 220px;
@@ -267,7 +252,6 @@ nav img:first-child{
 }
 
 /* MOTTO CSS index*/
-
 #motto {
     font-size: 50pt;
     line-height: 1.3;
@@ -278,7 +262,6 @@ nav img:first-child{
     text-align: center;
     display: inline-block;
 }
-
 @media all and (max-width: 800px) {
     #motto {
         font-size: 40pt;
@@ -311,34 +294,29 @@ nav img:first-child{
     padding: 75px 105px 0px 75px;
     overflow: hidden;
 }
-
 @media all and (max-width: 1125px) {
     #motto-overige {
         font-size: 18pt;
         margin: 0px 0 30px 0px;
         padding-top: 85px;
-
     }
 }
 @media all and (max-width: 750px) {
     #motto-overige {
         font-size: 13pt;
          padding-top: 85px;
-         padding-right: 80px
-
-
+         padding-right: 80px;
     }
 }
 @media all and (max-width: 400px) {
     #motto-overige {
         font-size: 10pt;
         padding-top: 10px;
-        padding-right: 80px
+        padding-right: 80px;
     }
 }
 
 /* OVER ONS KNOP CSS */
-
 #over-ons-knop:link {
     position: relative;
     color: white;
@@ -359,7 +337,6 @@ nav img:first-child{
     margin: 0 30px 0 30px;
     max-width: 400px;
 }
-
 @media all and (max-width: 500px) {
     #over-ons-knop:link {
         font-size: 10pt;
@@ -375,20 +352,14 @@ nav img:first-child{
     font-size: 20pt;
     letter-spacing: 0.2em;
     font-weight: 700;
-    font-family: 'Julius Sans One', sans-serif;
-    
+    font-family: 'Julius Sans One', sans-serif;    
 }
 
 #over-ons-knop:hover{
     background-color: rgba(54, 180, 147, 1);
 }
 
-
-
-
-
 /* PORTFOLIO CSS */
-
 #portfolio {
     position: relative;
     width: 100%;
@@ -408,6 +379,7 @@ nav img:first-child{
     max-width: 970px;
     letter-spacing: 0.2em;
 }
+
 #portfolio.geopend {
     left: -330px;
     max-height: 300vh;
@@ -444,11 +416,9 @@ nav img:first-child{
         float: none;
     }
     .project-card.left{
-        float:left;
-        
+        float:left;        
     }
 }
-
 @media all and (max-width: 400px){
     .project-card{
         height: 250px;
@@ -483,10 +453,10 @@ nav img:first-child{
 
 @media all and (max-width: 650px){
 .project-card a:link  {
-        font-size: 10pt;
-        
+        font-size: 10pt;        
     }
 }
+
 .project-card a:visited{
     color: white;
     text-decoration: none;
@@ -500,7 +470,6 @@ nav img:first-child{
     width: 121px;
     height: 6px;
 }
-
 @media all and (max-width: 650px){
 .project-card img  {
         width: 120px;        
@@ -607,9 +576,6 @@ nav img:first-child{
     border: 2px solid white;
 }  
 
-
-
-
 /* FOOTER CSS */
 #footer {
     width: auto;
@@ -623,6 +589,7 @@ nav img:first-child{
     padding: 20px 0 20px 0;
     margin: 0 -20px 0 30px;
 }
+
 #footer p.copyright.sitemap:hover {
     color: rgba(255, 97, 56, 1);
 }
@@ -694,7 +661,6 @@ nav img:first-child{
         padding: 20px 40px 10px 40px;
     }
 }
-
 @media all and (max-width: 400px){
     .contact-form.left{
         width: 100%;
@@ -718,7 +684,6 @@ nav img:first-child{
         padding: 20px 40px 10px 40px;
     }
 }
-
 @media all and (max-width: 400px){
     .contact-form.right{
         width: 100%;
@@ -762,7 +727,6 @@ nav img:first-child{
         font-size: 9pt;
     }
 }
-
 
 #contact-formulier{                                 /*Formulier*/
         width: 100%;
@@ -826,9 +790,6 @@ input[type=submit]:hover {
     }
 }
 
-
-
-
 /* CSS ALGEMENE VOORWAARDEN */
 .algemene-voorwaarden{
     width: 100%;
@@ -849,7 +810,7 @@ input[type=submit]:hover {
     }
 }
 
-.roman {
+.roman {                                            /* Romeense cijfers lijst */
     list-style-type: lower-roman;
     margin: 10px 0px 10px;
     font-size: 18pt; 
@@ -869,7 +830,7 @@ input[type=submit]:hover {
     }
 }
 
-.square {
+.square {                                               /* niveau twee squares lijst*/
     list-style-type: square;
     margin-left: -2em;
     color: rgba(255 , 255, 255, 1);
@@ -933,6 +894,7 @@ input[type=submit]:hover {
        font-size: 12pt; 
     }
 }
+
 .privacy-beleid p{
     color: rgba(255 , 255, 255, 1);
     line-height: 3ex;
@@ -951,10 +913,7 @@ input[type=submit]:hover {
     }
 }
 
-
-
 /* CSS OVER ONS ******************/
-
 .over-ons{
     width: 100%;
     height: auto;
@@ -1000,6 +959,7 @@ input[type=submit]:hover {
       margin: 10px 80px 10px 80px;
     }
 }
+
 #tekstoverons h3{
     color: rgba(255, 255, 255, 1);
     padding: 70px 0px 40px;
@@ -1048,7 +1008,6 @@ input[type=submit]:hover {
 @media all and (max-width: 400px){
     #ourteam h3{
       font-size: 10pt;
-
     }
 }
 
@@ -1099,11 +1058,8 @@ input[type=submit]:hover {
 
 #quote{
     font-style: italic;
-    color: white;
-  
+    color: white;  
 }
-
-
 
 .cirkeleen {
     border-radius: 50%;
@@ -1134,17 +1090,12 @@ input[type=submit]:hover {
     margin: 0 auto;
 }
 
-
-
 /* CSS DETAILSPAGINA **********/
-
 .detail-pagina{
     border: 2px solid grey;
     position: relative;
     overflow: hidden;
-
 }
-
 
 .detail-pagina.left{
     width: 60%;
@@ -1169,7 +1120,6 @@ input[type=submit]:hover {
         padding: 15px 40px 15px 40px;
     }
 }
-
 
 .detail-pagina.right{
     width: 40%;
@@ -1245,7 +1195,6 @@ input[type=submit]:hover {
     background-size: cover;
     border: 4px solid white;
 }
-
 
 /* CSS SITEMAP **************************/
 .links-sitemap{
